@@ -24,10 +24,12 @@ export const Navbar = () => {
                     <div className="flex lg:flex-1">
                         <a href="#" className="-m-1.5 p-1.5">
                             <span className="sr-only">Deyan</span>
-                            <img
-                                alt="Company Logo"
-                                src="/images/DV_white_transp.png"
-                                className="h-8 w-auto"
+                            <Image
+                              alt="Company Logo"
+                              src="/images/DV_white_transp.png"
+                              height={32}
+                              width="auto"
+                              className="w-auto"
                             />
                         </a>
                     </div>
@@ -60,10 +62,12 @@ export const Navbar = () => {
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Deyan</span>
-                                <img
-                                    alt="Company Logo"
-                                    src="/images/DV_white_transp.png"
-                                    className="h-8 w-auto"
+                                <Image
+                                  alt="Company Logo"
+                                  src="/images/DV_white_transp.png"
+                                  height={32}  // correspond à "h-8" (8 * 4 = 32 pixels)
+                                  width="auto" // vous pouvez spécifier la largeur exacte ou utiliser "fill" selon le comportement souhaité
+                                  className="w-auto"
                                 />
                             </a>
                             <button
