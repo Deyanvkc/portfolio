@@ -1,0 +1,78 @@
+/* src/app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance; /* Pas besoin de @apply ici non plus */
+  }
+}
+
+@layer base {
+  :root {
+    --background: 231 15% 18%;
+    --foreground: 60 10% 96%;
+    --muted: 231 12% 22%;
+    --muted-foreground: 231 12% 72%;
+    --popover: 231 15% 15%;
+    --popover-foreground: 0 0% 100%;
+    --card: 231 15% 16%;
+    --card-foreground: 0 0% 100%;
+    --border: 231 5% 23%;
+    --input: 231 5% 26%;
+    --primary: 60 10% 96%;
+    --primary-foreground: 60 10% 16%;
+    --secondary: 0 0% 25%;
+    --secondary-foreground: 0 0% 85%;
+    --accent: 231 15% 33%;
+    --accent-foreground: 231 15% 93%;
+    --destructive: 9 81% 57%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 60 10% 96%;
+ }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+ }
+  body {
+    @apply bg-background text-foreground;
+ }
+}
+
+hr {
+  width: 80%;
+  border: 1px solid lightgray;
+}
+
+.widthCard {
+  width: 600px;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  background-image: url("../../public/images/image_de_moi.jpg");
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+
+  .widthCard {
+    width: 90%;
+  }
+
+}
