@@ -28,7 +28,7 @@ export const Navbar = () => {
                               alt="Company Logo"
                               src="/images/DV_white_transp.png"
                               height={32}
-                              width="auto"
+                              width={32}
                               className="w-auto"
                             />
                         </a>
@@ -65,8 +65,8 @@ export const Navbar = () => {
                                 <Image
                                   alt="Company Logo"
                                   src="/images/DV_white_transp.png"
-                                  height={32}  // correspond à "h-8" (8 * 4 = 32 pixels)
-                                  width="auto" // vous pouvez spécifier la largeur exacte ou utiliser "fill" selon le comportement souhaité
+                                  height={32}
+                                  width={32}
                                   className="w-auto"
                                 />
                             </a>
