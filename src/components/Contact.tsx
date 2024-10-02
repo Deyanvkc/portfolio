@@ -23,7 +23,7 @@ export function Contact() {
                     Contactez-moi directement par ce formulaire.
                 </CardDescription>
             </CardHeader>
-            <form onSubmit={handleSubmit}>
+            <form>
                 <CardContent className="flex flex-col gap-6 px-20 my-8">
                     <div className="flex justify-between max-[767px]:flex-col">
                         <div className="grid gap-2">
@@ -60,7 +60,6 @@ export function Contact() {
                             required
                         />
                     </div>
-                    {status && <p className="text-red-500">{status}</p>}
                 </CardContent>
                 <CardFooter className="justify-end">
                     <Button type="submit">Envoyer</Button>
